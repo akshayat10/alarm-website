@@ -30,7 +30,7 @@ function App() {
           <Routes>
             <Route element={<Layout />}>
               <Route path="/" element={<Navigate to="/dashboard" replace />} />
-              <Route path="/Dashboard" element={<ScrollablePage><Dashboard /></ScrollablePage>} />
+              <Route path="/dashboard" element={<ScrollablePage><Dashboard /></ScrollablePage>} />
               <Route path="/broken150" element={<ScrollablePage><Broken150 /></ScrollablePage>} />
               <Route path="/air150" element={<ScrollablePage><Air150 /></ScrollablePage>} />
               <Route path="/other150" element={<Other150 />} />
