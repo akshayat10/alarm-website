@@ -22,7 +22,7 @@ const Broken150 = () => {
         <EachToolChart operation="Op150" toolNumber={17}  />
         <EachToolChart operation="Op150" toolNumber={11}  />
         <EachToolChart operation="Op150" toolNumber={12}  />
-        <EachToolChart operation="Op150" toolNumber={1}  />
+        <EachToolChart operation="Op150" toolNumber={13}  />
         {selectedChart && <ChartPopup chartData={selectedChart} onClose={handlePopupClose} />}
       </div>
     <div style={{marginBottom:"100px"}} />
