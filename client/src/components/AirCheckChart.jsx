@@ -49,7 +49,9 @@ const AirCheckChart = ({ operation }) => {
       });
 
       // Convert data to nivo bar chart format
-      const formattedChartData = Object.keys(machineCountsByDate).map((dateString) => {
+      const formattedChartData = Object.keys(machineCountsByDate)
+      .filter((dateString) => dateString !== threeWeeksAgo.toISOString().split("T")[0]) // Exclude the earliest date
+      .map((dateString) => {
         return {
           date: dateString,
           ...machineCountsByDate[dateString],
