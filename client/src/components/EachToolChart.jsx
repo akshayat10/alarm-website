@@ -68,7 +68,9 @@ const closeChartModal = () => {
       });
 
       // Convert data to format of Nivo bar chart
-      const formattedChartData = Object.keys(machineCountsByDate).map((dateString) => {
+      const formattedChartData = Object.keys(machineCountsByDate)
+      .filter((dateString) => dateString !== threeWeeksAgo.toISOString().split("T")[0]) // Exclude the earliest date
+      .map((dateString) => {
         return {
           date: dateString,
           ...machineCountsByDate[dateString],
