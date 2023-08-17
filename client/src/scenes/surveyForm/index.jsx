@@ -106,7 +106,6 @@ const SurveyForm = () => {
               <MenuItem value="A">A</MenuItem>
               <MenuItem value="B">B</MenuItem>
               <MenuItem value="C">C</MenuItem>
-              <MenuItem value="All">All</MenuItem>
             </Select>
           </FormControl>
           <InputLabel
