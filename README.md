@@ -1,4 +1,4 @@
-# alarm-website
+# demo-website
 This project was created to replace daily production data analysis that previously took place on paper and was reported on excel. I created this website to offer a better, more efficient solution for management.
 
 ## Demo Video
